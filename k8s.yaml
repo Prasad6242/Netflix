@@ -17,20 +17,6 @@ spec:
         image: prasad6242/netflix
         ports:
         - containerPort: 4000
----
-users:
-- name: iam-root-account@kubern8s.eu-west-1.eksctl.io
-  user:
-    exec:
-      apiVersion: client.authentication.k8s.io/v1beta1
-      command: aws
-      args:
-      - eks
-      - get-token
-      - --cluster-name
-      - kubern8s
-      - --region
-      - eu-west-1
 
 ---
 apiVersion: v1
