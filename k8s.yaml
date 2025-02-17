@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: prasad6242/netflix
+        image: prasad6242/Netflix
         ports:
         - containerPort: 4000
 
